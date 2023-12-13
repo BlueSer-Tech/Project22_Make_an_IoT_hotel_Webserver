@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='admin.js') }}"></script>
+    <title>Trang quản lý</title>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 25px;
+}
+p{
+    color: red;
+    }
+
+</style>
+<body>
+<div align="center" style="margin-top:100px;font-size: 20px;">
+<table>
+  <tr>
+    <th>STT</th>
+    <th>CCCD</th>
+    <th>Custom name</th>
+      <th>ROOM</th>
+      <th>Check-in day</th>
+      <th>Check-out day</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>
+              <p  id="cccd1"></p>
+      </td>
+    <td>
+        <p  id="name1"></p>
+
+        </td>
+      <td>
+        <p id="room1"></p>
+        </td>
+    <td>
+        <p id="check-in1"></p>
+    </td>
+
+      <td>
+        <p id="check-out1"></p>
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>
+        <p id="cccd2">
+
+        </p>
+    </td>
+    <td>
+        <p  id="name2"></p>
+    </td>
+      <td>
+        <p  id="room2"></p>
+        </td>
+
+      <td>
+        <p id="check-in2"></p>
+    </td>
+
+      <td>
+        <p id="check-out2"></p>
+    </td>
+  </tr>
+</table>
+</div>
+<p style="display:none" id ='room'></p>
+<p style="display:none" id ='time'></p>
+<p style="display:none" id = 'verify'></p>
+</body>
+</html>
